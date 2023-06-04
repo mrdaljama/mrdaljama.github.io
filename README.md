@@ -1,1 +1,0 @@
-# mrdaljama.github.io
