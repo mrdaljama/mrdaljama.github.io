@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 60px;
   background-color: #ffeded;
 }
@@ -46,4 +46,9 @@ header {
 section#about {
   padding: 40px;
   background-color: #ffcccc;
+}
+
+/* Remove bullets from nav-links */
+.nav-links li {
+  list-style: none;
 }
