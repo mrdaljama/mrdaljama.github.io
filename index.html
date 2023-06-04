@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mario Ryan Aljama - Game Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Mario Ryan Aljama</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="professional-projects.html">Professional Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="personal-projects.html">Personal Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+    <div class="header-row">
+      <h1 class="name">Mario Ryan Aljama</h1>
+    </div>
+    <div class="header-row">
+      <h2 class="position">Unity Game Developer</h2>
+    </div>
+    <nav class="header-row">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="professional-projects.html">Professional Projects</a></li>
+        <li><a href="personal-projects.html">Personal Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
     </nav>
   </header>
 
   <div class="container">
-    <h1 class="text-center">Mario Ryan Aljama</h1>
-    <h3 class="text-center">Unity Game Developer</h3>
-
     <section id="about">
       <h2>About Me</h2>
       <p>
@@ -48,35 +39,37 @@
       </p>
     </section>
 
-<section id="project-overview">
-  <h2>Project Overview</h2>
-  <div id="project-carousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#project-carousel" data-slide-to="1"></li>
-      <li data-target="#project-carousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="project1.jpg" class="d-block w-100" alt="Project 1">
+    <section id="project-overview">
+      <h2>Project Overview</h2>
+      <div id="project-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#project-carousel" data-slide-to="1"></li>
+          <li data-target="#project-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="project1.jpg" class="d-block w-100" alt="Project 1">
+          </div>
+          <div class="carousel-item">
+            <img src="project2.jpg" class="d-block w-100" alt="Project 2">
+          </div>
+          <div class="carousel-item">
+            <img src="project3.jpg" class="d-block w-100" alt="Project 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="carousel-item">
-        <img src="project2.jpg" class="d-block w-100" alt="Project 2">
-      </div>
-      <div class="carousel-item">
-        <img src="project3.jpg" class="d-block w-100" alt="Project 3">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    </section>
+
   </div>
-</section>
-  
 </body>
+
 </html>
