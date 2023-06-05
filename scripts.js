@@ -1,62 +1,26 @@
-const header = document.querySelector('header');
-const nav = document.querySelector('nav');
-const goToTopButton = document.getElementById('go-to-top');
+var $goTop = $(".go-to-top");
+$goTop.hide();
 
-let isNavVisible = true;
-
-window.addEventListener('scroll', function() {
-  const headerHeight = header.offsetHeight;
-  const navOffsetTop = nav.offsetTop;
-
-  if (window.pageYOffset > navOffsetTop - headerHeight) {
-    isNavVisible = false;
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 200) {
+    $goTop.fadeIn(500);
   } else {
-    isNavVisible = true;
-  }
-
-  if (!isNavVisible || window.pageYOffset === 0) {
-    goToTopButton.classList.add('show');
-  } else {
-    goToTopButton.classList.remove('show');
+    $goTop.fadeOut(200);
   }
 });
 
-goToTopButton.addEventListener('click', function(e) {
-  e.preventDefault();
-  scrollToTop(1000);
+$goTop.on("click", function () {
+  $("html, body").animate(
+    {
+      scrollTop: 0
+    },
+    150
+  );
 });
-
-function scrollToTop(duration) {
-  const targetPosition = 0;
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  let startTime = null;
-
-  function animation(currentTime) {
-    if (startTime === null) {
-      startTime = currentTime;
-    }
-    const timeElapsed = currentTime - startTime;
-    const scrollAmount = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, scrollAmount);
-    if (timeElapsed < duration) {
-      requestAnimationFrame(animation);
-    }
-  }
-
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-  }
-
-  requestAnimationFrame(animation);
-}
 
 // Check initial scroll position
-window.addEventListener('DOMContentLoaded', function() {
-  if (window.pageYOffset === 0) {
-    goToTopButton.classList.remove('show');
+$(document).ready(function () {
+  if ($(window).scrollTop() === 0) {
+    $goTop.fadeOut(200);
   }
 });
