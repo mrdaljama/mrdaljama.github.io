@@ -121,3 +121,36 @@ section#project-overview hr {
   background-color: #3D348B;
   color: #E0E2DB;
 }
+
+footer {
+  background-color: #E6AF2E;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  color: #191716;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #E0E2DB;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #3D348B;
+}
