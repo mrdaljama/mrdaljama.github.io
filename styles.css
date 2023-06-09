@@ -2,75 +2,89 @@
 
 /* Body */
 body {
-  background-color: #ffffff;
-  color: #3D348B;
+  background-color: #080708;
+  color: #080708;
+}
+
+body h1 {
+    color: #DF2935;
+}
+
+body h2 {
+    color: #DF2935;
 }
 
 /* Container */
 .container {
-  background-color: #ffffff;
+  background-color: #E6E8E6;
 }
 
 /* Header */
 header {
-  background-color: #E6AF2E;
-  color: #3D348B;
+  background-color: #FDCA40;
+  color: #DF2935;
+}
+
+h2.position {
+  color: #080708;
 }
 
 /* Navigation */
 nav ul li a {
-  color: #E0E2DB;
+  color: #080708;
 }
 
 nav ul li a:hover {
-  background-color: #3D348B;
-  color: #E0E2DB;
+  background-color: #DF2935;
+  color: #ffffff;
 }
 
 /* Project Overview */
 section#project-overview h2 {
-  color: #3D348B;
+  color: #DF2935;
 }
 
 section#project-overview hr {
-  border-top: 2px solid #3D348B;
+  border-top: 2px solid #080708;
 }
 
 /* Project Card */
 .project-card {
-  background-color: #E6AF2E;
+  background-color: #FDCA40;
 }
 
-.project-card h3,
+.project-card h3 {
+    color: #DF2935;
+}
 .project-card p {
-  color: #3D348B;
+  color: #080708;
 }
 
 .project-card a {
-  color: #3D348B;
-  background-color: #E0E2DB;
+  color: #080708;
+    background-color: #E6E8E6;
 }
 
 .project-card a:hover {
-  background-color: #3D348B;
-  color: #E0E2DB;
+  background-color: #DF2935;
+  color: #ffffff;
 }
 
 /* Footer */
 footer {
-  background-color: #E6AF2E;
+  background-color: #FDCA40;
 }
 
 footer p {
-  color: #191716;
+  color: #080708;
 }
 
 .social-icons a {
-  color: #E0E2DB;
+  color: #080708;
 }
 
 .social-icons a:hover {
-  color: #3D348B;
+  color: #DF2935;
 }
 
 /* Go to Top Button */
@@ -86,9 +100,8 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -126,10 +139,6 @@ section {
 h1.name {
   margin: 0;
   margin-bottom: -20px;
-}
-
-h2.position {
-  color: #191716;
 }
 
 section#project-overview {
