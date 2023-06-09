@@ -30,6 +30,10 @@ h2.position {
 }
 
 /* Navigation */
+nav {
+    background-color: #FDCA40;
+}
+
 nav ul li a {
   color: #080708;
 }
@@ -100,7 +104,7 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -109,6 +113,36 @@ body {
 header {
   padding: 20px;
   border-radius: 10px 10px 0 0;
+      display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-right: 10px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 nav ul {
@@ -137,6 +171,7 @@ section {
 }
 
 h1.name {
+    font-size: 45px;
   margin: 0;
   margin-bottom: -20px;
 }
@@ -168,8 +203,8 @@ section#project-overview hr {
 }
 
 .project-card .project-image img {
-  width: 350px;
-  height: 240px;
+  width: 460px;
+  height: auto;
   border-radius: 10px;
 }
 
